@@ -3,6 +3,6 @@ import { default as contactRouter } from './contact'
 
 const router = PromiseRouter()
 
-router.use('/api', contactRouter)
+router.use('/contact', contactRouter)
 
 export default router
