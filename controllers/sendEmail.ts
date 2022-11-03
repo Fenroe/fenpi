@@ -16,7 +16,7 @@ const sendEmail = [
         console.log(errors)
         throw new Error('Validation failed')
       }
-      const { topic, name, emailAddress, heading, text} = req.body
+      const { topic, name, emailAddress, heading, text } = req.body
       const origin = req.get('host')
       const messageSubject = getMessageSubject(origin)
       const messagePlaintext = getMessagePlaintext(topic, name, emailAddress, heading, text, origin)
