@@ -20,6 +20,6 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cors(corsOptions))
 app.use('/api', apiRouter)
 
-app.listen(8080, () => {
-  console.log('The application is listening on port 8080')
+app.listen(process.env.PORT, () => {
+  console.log('The application is listening on port' + process.env.PORT)
 })
