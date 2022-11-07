@@ -1,6 +1,1 @@
 export { default as sendEmail } from './sendEmail'
-export { default as deleteProject } from './deleteProject'
-export { default as getAllProjects } from './getAllProjects'
-export { default as getProject } from './getProject'
-export { default as postProject } from './postProject'
-export { default as updateProjects } from './updateProject'
