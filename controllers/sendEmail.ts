@@ -5,7 +5,7 @@ import { createTransport } from 'nodemailer'
 const sendEmail = [
   body('topic').isString().notEmpty(),
   body('name').isString(),
-  body('emailAddress').isEmail(),
+  body('emailAddress').isString(),
   body('heading').isString(),
   body('text').isString().notEmpty(),
   async (req: any, res: any, next: Function) => {
