@@ -17,7 +17,7 @@ const sendEmail = [
       }
       const { topic, name, emailAddress, heading, text } = req.body
       const origin = req.get('origin')
-      const messageSubject = getMessageSubject(origin)
+      const messageSubject = getMessageSubject(name, origin)
       const messagePlaintext = getMessagePlaintext(topic, name, emailAddress, heading, text, origin)
       const messageHtml = getMessageHtml(topic, name, emailAddress, heading, text, origin)
       const message = {

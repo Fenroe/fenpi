@@ -27,7 +27,7 @@ const sendEmail = [
             }
             const { topic, name, emailAddress, heading, text } = req.body;
             const origin = req.get('origin');
-            const messageSubject = (0, utils_1.getMessageSubject)(origin);
+            const messageSubject = (0, utils_1.getMessageSubject)(name, origin);
             const messagePlaintext = (0, utils_1.getMessagePlaintext)(topic, name, emailAddress, heading, text, origin);
             const messageHtml = (0, utils_1.getMessageHtml)(topic, name, emailAddress, heading, text, origin);
             const message = {
